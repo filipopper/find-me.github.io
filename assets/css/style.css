@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+header {
+    width: 95%;
+    max-width: 788px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+.share-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.social-network-container {
+    text-align: center;
+}
+
+.tile,
+.tile-pink {
+    width: 100%;
+    margin: 7px;
+    border-radius: 25px 5px 25px 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #252525;
+}
+
+.tile-pink {
+    background-color: pink;
+}
+
+.tile:hover,
+.tile-pink:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+}
+
+.tile p, .tile-pink p {
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.tile-share-button {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: none;
+}
+
+.tile-share-button {
+    background-color: #343434;
+}
+
+.tile-share-button i,
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+}
+
+.tile-share-button i:hover, i:hover {
+    transform: scale(1.2);
+}
+
+.tile:hover .tile-share-button {
+    display: block;
+}
+
+.tile-pink p,
+.tile-pink,
+.tile-pink,
+.icon-pink i {
+    color: gray;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    margin: 4px 8px;
+    border-radius: 22px;
+    color: whitesmoke;
+}
+
+.icon-pink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    margin: 4px 8px;
+    border-radius: 22px;
+    color: gray;
+}
+
+.image-container {
+    height: 96px;
+    width: 96px;
+    border-radius: 48px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.image-container img {
+    height: 100%;
+}
+
+.icon {
+    margin: 4px 8px;
+}
+
+.warning {
+    color: darkred;
+}
